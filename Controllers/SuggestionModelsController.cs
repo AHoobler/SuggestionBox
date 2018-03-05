@@ -44,8 +44,8 @@ namespace SuggestionBox.Controllers
         // POST: SuggestionModels/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
+        [HttpPost] //goes on the website
+        [ValidateAntiForgeryToken] // no one is hacking the app
         public ActionResult Create([Bind(Include = "SuggestionID,Topic,Suggestion")] SuggestionModel suggestionModel)
         {
             if (ModelState.IsValid)
@@ -94,7 +94,7 @@ namespace SuggestionBox.Controllers
         {
             if (id == null)
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest); //changes the information
             }
             SuggestionModel suggestionModel = db.SuggestionModels.Find(id);
             if (suggestionModel == null)
@@ -109,7 +109,7 @@ namespace SuggestionBox.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            SuggestionModel suggestionModel = db.SuggestionModels.Find(id);
+            SuggestionModel suggestionModel = db.SuggestionModels.Find(id);///deletes inforamtion
             db.SuggestionModels.Remove(suggestionModel);
             db.SaveChanges();
             return RedirectToAction("Index");

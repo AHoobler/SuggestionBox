@@ -40,3 +40,7 @@ C:\Users\Ashley\source\repos\SuggestionBox\SuggestionBox\obj\Debug\SuggestionBox
 C:\Users\Ashley\source\repos\SuggestionBox\SuggestionBox\obj\Debug\SuggestionBox.csproj.CoreCompileInputs.cache
 C:\Users\Ashley\source\repos\SuggestionBox\SuggestionBox\obj\Debug\SuggestionBox.dll
 C:\Users\Ashley\source\repos\SuggestionBox\SuggestionBox\obj\Debug\SuggestionBox.pdb
+C:\Users\Ashley\source\repos\SuggestionBox\SuggestionBox\bin\EntityFramework.dll
+C:\Users\Ashley\source\repos\SuggestionBox\SuggestionBox\bin\EntityFramework.SqlServer.dll
+C:\Users\Ashley\source\repos\SuggestionBox\SuggestionBox\bin\EntityFramework.xml
+C:\Users\Ashley\source\repos\SuggestionBox\SuggestionBox\bin\EntityFramework.SqlServer.xml
